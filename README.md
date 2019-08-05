@@ -4,7 +4,7 @@ This script provides a simple and interactive way to add a new mime type based o
 
 ## Example / Explanation
 
-I want Linux to open files with the ".pde" extension with Processing (A certain program). If I go into my file explorer and set Processing as the new default for some .pde file, it will cause all text files to be opened with Processing, which is of course undesireable.
+Say I want Linux to open files with the ".pde" extension with Processing (A certain program). If I go into my file explorer and set Processing as the new default for some .pde file, it will cause all text files to be opened with Processing, which is of course undesireable.
 
 This happens because Linux, as opposed to Windows, does not distinguish files by their extensions, but rather by their "mime type", which can be determined by many different factors of the file, with the file extension just being one option. For a file to be considered a certain mime type though, a configuration file has to exist that specifies a new mime type with certain rules which files fall under it's name. Usually programs bring this configuration with them when being installed, so most of the time, creating a new mime type is not necessary.
 
