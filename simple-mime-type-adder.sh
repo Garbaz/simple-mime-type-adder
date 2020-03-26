@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ `id -g` -eq 0 ];then
     # We are running as root
     mimepath="/usr/share/mime"
@@ -43,9 +44,9 @@ esac
 
 mkdir -p "$mimepath/packages"
 
-2>/dev/null cp "$mimepath/packages/smtl-$mimename.xml" "$mimepath/packages/smtl-$mimename.xml.bak" 
-printf "$xmlfile\n" > "$mimepath/packages/smtl-$mimename.xml"
+2>/dev/null cp "$mimepath/packages/smta-$mimename.xml" "$mimepath/packages/smta-$mimename.xml.bak" 
+printf "$xmlfile\n" > "$mimepath/packages/smta-$mimename.xml"
 
 update-mime-database "$mimepath"
 
-printf "\nTo uninstall, go to \"$mimepath/packages\", delete the \"smtl-$mimename.xml\" file and run \`update-mime-database\`.\n"
+printf "\nTo uninstall, go to \"$mimepath/packages\", delete the \"smta-$mimename.xml\" file and run \`update-mime-database\`.\n"
